@@ -1,0 +1,32 @@
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  }
+  
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/beer-machine-alcohol-brewery.webp");
+  min-height: 100%;
+  }
+  
+p {
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+  margin: 0 auto;
+  }
+
+div form label {
+  font-size: 30px;
+  font-weight: bold;
+  color:darkred;
+  }
+
+.container {
+  padding-top: 50px;
+}
+
+form label {
+  background-color: antiquewhite;
+}

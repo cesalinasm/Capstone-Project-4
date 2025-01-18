@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>The pub finder</title>
+</head>
+<body>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+        <span class="w3-tag"><%= time %></span>
+    </div>
+    <div class="container">
+        <% if (locals.data) {%>
+        <p> Pub name: <%= data.name %> <br>
+            Street: <%= data.address_1 %> <br>
+            <%= data.city %>, <%= data.state %>, <%= data.country %> <br>
+            Phone: <%= data.phone %> <br>
+            Website: <%= data.website_url %>
+        <%}%>
+    </div>
+
+    <div class="w3-display-middle w3-center">
+    <form action="/" method="post">
+        <label for="fname">Where would you like to drink?</label><br>
+        <input name="country-name" type="submit" value="Austria" formaction="/">
+        <input name="country-name" type="submit" value="England" formaction="/">
+        <input name="country-name" type="submit" value="France" formaction="/">
+        <input name="country-name" type="submit" value="Isle of Man" formaction="/">
+        <input name="country-name" type="submit" value="Ireland" formaction="/">
+        <input name="country-name" type="submit" value="Poland" formaction="/">
+        <input name="country-name" type="submit" value="Portugal" formaction="/">
+        <input name="country-name" type="submit" value="Scotland" formaction="/">
+        <input name="country-name" type="submit" value="Singapore" formaction="/">
+        <input name="country-name" type="submit" value="South Korea" formaction="/">
+        <input name="country-name" type="submit" value="United States" formaction="/">
+    </form> 
+    </div>
+    
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">Web developed by Carlos Eduardo</span>
+    </div>
+</header>
+
+</body>
+</html>
